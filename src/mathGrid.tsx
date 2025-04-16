@@ -132,7 +132,7 @@ const MathPuzzleConnector: React.FC<Props> = ({ grid, result, cellSize = 80 }) =
 
   const expression = path.map((c) => c.value).join('');
   const value = safeEval(expression);
-  const isCorrect = path.length > 0 && path.at(-1)?.row === numRows - 1 && path.at(-1)?.col === numCols - 1 && value === result;
+  const isCorrect = path.length > 0 && path[path.length - 1]?.row === numRows - 1 && path[path.length - 1]?.col === numCols - 1 && value === result;
 
   return (
     <div className="flex flex-col items-center gap-2">

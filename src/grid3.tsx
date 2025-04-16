@@ -168,7 +168,7 @@ export default function MathPuzzleGame() {
   };
 
   const expression = path.map((c) => c.value).join('');
-  const isWin = path.length > 0 && path.at(-1)?.row === size - 1 && path.at(-1)?.col === size - 1 && eval(expression) === puzzle.result;
+  const isWin = path.length > 0 && path[path.length - 1]?.row === size - 1 && path[path.length - 1]?.col === size - 1 && eval(expression) === puzzle.result;
 
   return (
     <div className="p-6 flex flex-col items-center gap-4">

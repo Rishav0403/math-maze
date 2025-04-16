@@ -206,7 +206,7 @@ export default function MathPuzzleGame() {
     evaluated = Math.floor(eval(expression));
   } catch (e) {}
 
-  const isWin = path.length > 0 && path.at(-1)?.row === size - 1 && path.at(-1)?.col === size - 1 && evaluated === puzzle.result;
+  const isWin = path.length > 0 && path[path.length - 1]?.row === size - 1 && path[path.length - 1]?.col === size - 1 && evaluated === puzzle.result;
 
   return (
     <div className="">

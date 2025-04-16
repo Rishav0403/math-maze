@@ -113,7 +113,6 @@ export default function MathPuzzleGame() {
   const [hoverPos, setHoverPos] = useState<{ x: number; y: number } | null>(null);
   const [showTutorial, setShowTutorial] = useState(false);
   const [animateWin, setAnimateWin] = useState(false);
-  const [difficulty, setDifficulty] = useState('medium');
   const [showConfetti, setShowConfetti] = useState(false);
   const [gameStats, setGameStats] = useState({
     gamesPlayed: 0,
