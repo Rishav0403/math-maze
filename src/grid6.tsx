@@ -565,7 +565,7 @@ export default function MathPuzzleGame() {
     {/* Controls */}
     <div className="controls">
       <div className="grid-size-controls">
-        {[3, 5, 7].map((n) => (
+        {[3, 4, 5, 7].map((n) => (
           <button
             key={n}
             className={`size-button ${size === n ? 'active' : ''}`}
